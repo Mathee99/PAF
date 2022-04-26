@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "5fcc3061-c28c-484f-af2f-14be808111ed",
+		"name": "Electricity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/API/webapi/API/getAllCoustomerInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/getAllCoustomerInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"getAllCoustomerInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/addCoustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cusName",
+							"value": "Amaya Nanayakkara",
+							"type": "text"
+						},
+						{
+							"key": "cusAddress",
+							"value": "No.10, main St, Malabe",
+							"type": "text"
+						},
+						{
+							"key": "cusNIC",
+							"value": "981234565V",
+							"type": "text"
+						},
+						{
+							"key": "cusEmail",
+							"value": "amaya@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "cusPno",
+							"value": "0711234567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/addCoustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"addCoustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/updateCoustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cusID\" : \"1\",\n    \"cusName\":\"Amaya Nanayakkra\",\n    \"cusAddress\":\"No,12,malabe\",\n    \"cusNIC\":\"981234676V\",\n    \"cusEmail\":\"amaya@hotmail.com\",\n    \"cusPno\" : \"0712344567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/updateCoustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"updateCoustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/removeCoustomer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "custData",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/removeCoustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"removeCoustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/getAllEmployeeInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/getAllEmployeeInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"getAllEmployeeInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/addEmployeeInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empName",
+							"value": "Amaya Nanayakkra",
+							"type": "text"
+						},
+						{
+							"key": "empAddress",
+							"value": "No.12,Malabe",
+							"type": "text"
+						},
+						{
+							"key": "empNIC",
+							"value": "98123344V",
+							"type": "text"
+						},
+						{
+							"key": "empDOB",
+							"value": "1998-06-12",
+							"type": "text"
+						},
+						{
+							"key": "empContact",
+							"value": "0711234567",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/addEmployeeInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"addEmployeeInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/updateEmployeeInfoa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"empID\" : \"1\",\n    \"empName\" : \"Amaya Nanayakkara\",\n    \"empAddress\" : \"No.10, Malabe\",\n    \"empNIC\" : \"981234456V\",\n    \"empDOB\" : \"1998-04-25\",\n    \"empContact\" : \"071234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/updateEmployeeInfoa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"updateEmployeeInfoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/removeEmployeeInfo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empData ",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/removeEmployeeInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"removeEmployeeInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/getAllPaymentInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/getAllPaymentInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"getAllPaymentInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/addPaymentInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pAccNo",
+							"value": "0001",
+							"type": "text"
+						},
+						{
+							"key": "pCus",
+							"value": "001",
+							"type": "text"
+						},
+						{
+							"key": "pDate",
+							"value": "2022-04-25",
+							"type": "text"
+						},
+						{
+							"key": "pAmount",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/addPaymentInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"addPaymentInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/updatePaymentInfo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pID\" : \"1\",\n    \"pAccNo\" : \"0001\",\n    \"pCus\" : \"001\",\n    \"pDate\" : \"2022-04-26\",\n    \"pAmount\" : \"1200.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/updatePaymentInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"updatePaymentInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/removePaymentInfo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "paymentData",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/removePaymentInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"removePaymentInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/getAllPowerDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/getAllPowerDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"getAllPowerDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/addPowerDetailsInfo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "pdCusName",
+							"value": "Amaya",
+							"type": "text"
+						},
+						{
+							"key": "pdAccNo",
+							"value": "0001",
+							"type": "text"
+						},
+						{
+							"key": "psUnit",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "pdDate",
+							"value": "2022-04-25",
+							"type": "text"
+						},
+						{
+							"key": "pdPay",
+							"value": "13000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/addPowerDetailsInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"addPowerDetailsInfo"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/updatePowerDetailsInfo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pdID\" : \"1\",\n    \"pdCusName\" : \"Amaya Nanayakkra\",\n    \"pdAccNo\" : \"001\",\n    \"psUnit\" : \"100\",\n    \"pdDate\" : \"2022-04-25\",\n    \"pdPay\" : \"13500.00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/updatePowerDetailsInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"updatePowerDetailsInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/API/webapi/API/removePowerDetails",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "powerData",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/API/webapi/API/removePowerDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"API",
+						"webapi",
+						"API",
+						"removePowerDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
